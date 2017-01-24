@@ -1,0 +1,54 @@
+<h1><code ng:non-bindable="">DistanciaService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">opencity</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="opencity-service-page opencity-service-distanciaservice-page"><p>Gestiona el cálculo de las distancias entre los elementos y el usuario.
+Permite, además, la conversión de coordenadas UTM a coordenadas WGS84, necesarias para la representación en mapas.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_calculardistancia">calcularDistancia(latOrigen, longOrigen, latDestino, longDestino)</h3>
+<div class="calculardistancia"><div class="opencity-distanciaservice-calculardistancia-page"><p>Calcula la distancia en kilómetros existente entre dos coordenadas.</p>
+</div><h5 id="methods_calculardistancia_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>latOrigen</td><td><a href="" class="label type-hint type-hint-double">Double</a></td><td><div class="opencity-distanciaservice-calculardistancia-page"><p>Coordenada latitud origen</p>
+</div></td></tr><tr><td>longOrigen</td><td><a href="" class="label type-hint type-hint-double">Double</a></td><td><div class="opencity-distanciaservice-calculardistancia-page"><p>Coordenada longitud origen</p>
+</div></td></tr><tr><td>latDestino</td><td><a href="" class="label type-hint type-hint-double">Double</a></td><td><div class="opencity-distanciaservice-calculardistancia-page"><p>Coordenada latitud destino</p>
+</div></td></tr><tr><td>longDestino</td><td><a href="" class="label type-hint type-hint-double">Double</a></td><td><div class="opencity-distanciaservice-calculardistancia-page"><p>Coordenada longitud destino</p>
+</div></td></tr></tbody></table><h5 id="methods_calculardistancia_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-double">Double</a></td><td><div class="opencity-distanciaservice-calculardistancia-page"><p>Distancia</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_convertirutm">convertirUTM(valorX, valorY)</h3>
+<div class="convertirutm"><div class="opencity-distanciaservice-convertirutm-page"><p>Método que permite convertir coordenadas UTM en coordenadas WGS84, necesarias para representarlas 
+sobre los mapas de Google.
+Hace uso de la librería UTM Converter (<a href="https://github.com/urbanetic/utm-converter">https://github.com/urbanetic/utm-converter</a>).</p>
+</div><h5 id="methods_convertirutm_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>valorX</td><td><a href="" class="label type-hint type-hint-integer">Integer</a></td><td><div class="opencity-distanciaservice-convertirutm-page"><p>Coordenada X UTM</p>
+</div></td></tr><tr><td>valorY</td><td><a href="" class="label type-hint type-hint-integer">Integer</a></td><td><div class="opencity-distanciaservice-convertirutm-page"><p>Coordenada Y UTM</p>
+</div></td></tr></tbody></table><h5 id="methods_convertirutm_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="opencity-distanciaservice-convertirutm-page"><p>Coordenadas WGS84</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_deg2rad">deg2rad(deg)</h3>
+<div class="deg2rad"><div class="opencity-distanciaservice-deg2rad-page"><p>Convierte grados en radianes.</p>
+</div><h5 id="methods_deg2rad_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>deg</td><td><a href="" class="label type-hint type-hint-double">double</a></td><td><div class="opencity-distanciaservice-deg2rad-page"><p>Grados</p>
+</div></td></tr></tbody></table><h5 id="methods_deg2rad_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-double">double</a></td><td><div class="opencity-distanciaservice-deg2rad-page"><p>Radianes</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_evaluarnuevaposicion">evaluarNuevaPosicion(posicion, recargar)</h3>
+<div class="evaluarnuevaposicion"><div class="opencity-distanciaservice-evaluarnuevaposicion-page"><p>Método que evalúa si la posición del usuario es representativa para realizar alguna acción. 
+Si el desplazamiento es inferior a 250 metros no ocurre nada; si es superior a 250 metros se emite un evento que 
+recarga los listados de resultados cercanos y, si además es superior a 5000 metros, se vuelve a calcular la ciudad 
+en la que se encuentra el usuario.</p>
+</div><h5 id="methods_evaluarnuevaposicion_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>posicion</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="opencity-distanciaservice-evaluarnuevaposicion-page"><p>Latitud y longitud actual del usuario</p>
+</div></td></tr><tr><td>recargar</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="opencity-distanciaservice-evaluarnuevaposicion-page"><p>Indica si el usuario tiene activado la recarga automática</p>
+</div></td></tr></tbody></table><h5 id="methods_evaluarnuevaposicion_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-booelan">booelan</a></td><td><div class="opencity-distanciaservice-evaluarnuevaposicion-page"><p>Valor booleano que indica si el desplazamiento del usuario es representativo.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+<div class="member property"><h2 id="properties">Properties</h2>
+<ul class="properties"><li><h3 id="properties_posicionprevia">posicionPrevia</h3>
+<div class="posicionprevia"><div class="opencity-distanciaservice-posicionprevia-page"><p>Almacena la posición previa del usuario para registrar el desplazamiento.</p>
+</div></div>
+</li>
+</ul>
+</div>
+</div>

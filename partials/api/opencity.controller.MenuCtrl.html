@@ -1,0 +1,57 @@
+<h1><code ng:non-bindable="">MenuCtrl</code>
+<div><span class="hint">controller in module <code ng:non-bindable="">opencity</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="opencity-controller-page opencity-controller-menuctrl-page"><p>Controlador menú principal. Permite consultar las diferentes categorías existentes para la ciudad
+en la que se encuentra el usuario.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_getimagen">getImagen(nombreImagen)</h3>
+<div class="getimagen"><div class="opencity-menuctrl-getimagen-page"><p>Obtiene la imagen que se muestra en el menú principal para cada
+categoría disponible. La imagen varía en función de la ciudad en la que se encuentra el usuario.</p>
+</div><h5 id="methods_getimagen_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>nombreImagen</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="opencity-menuctrl-getimagen-page"><p>Nombre de la imagen requerida</p>
+</div></td></tr></tbody></table><h5 id="methods_getimagen_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="opencity-menuctrl-getimagen-page"><p>Ruta hacia la imagen</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_go">go(categoria)</h3>
+<div class="go"><div class="opencity-menuctrl-go-page"><p>Permite navegar a cada una de las categorías existentes. </p>
+</div><h5 id="methods_go_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>categoria</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="opencity-menuctrl-go-page"><p>Estado al que se navega</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_gotaxis">goTaxis()</h3>
+<div class="gotaxis"><div class="opencity-menuctrl-gotaxis-page"><p>Permite acceder a la sección que permite consultar las 
+paradas de taxi cercanas.</p>
+</div></div>
+</li>
+<li><h3 id="methods_obtenerlocalizacion">obtenerLocalizacion()</h3>
+<div class="obtenerlocalizacion"><div class="opencity-menuctrl-obtenerlocalizacion-page"><p>Permite volver a obtener la localización de un usuario.
+Se emplea cuando no puede obtenerse la ubicación en el momento de iniciar la aplicación.</p>
+</div></div>
+</li>
+<li><h3 id="methods_show">show(categoria)</h3>
+<div class="show"><div class="opencity-menuctrl-show-page"><p>Comprueba si se muestra una categoría determinada en el menú principal.
+Las categorías que se muestran dependen de la ciudad en la que se ubica el usuario.</p>
+</div><h5 id="methods_show_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>categoria</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="opencity-menuctrl-show-page"><p>Categoría</p>
+</div></td></tr></tbody></table><h5 id="methods_show_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="opencity-menuctrl-show-page"><p>Valor booleano que indica si debe mostrarse la categoría</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+<div class="member property"><h2 id="properties">Properties</h2>
+<ul class="properties"><li><h3 id="properties_mostraropciones">mostrarOpciones</h3>
+<div class="mostraropciones"><div class="opencity-controller-page opencity-controller-menuctrl-mostraropciones-page"><p>Indica si deben mostrarse las categorías existentes en la ciudad del usuario.</p>
+</div></div>
+</li>
+<li><h3 id="properties_mostrarreintentar">mostrarReintentar</h3>
+<div class="mostrarreintentar"><div class="opencity-controller-page opencity-controller-menuctrl-mostrarreintentar-page"><p>Indica si debe mostrarse la opción de reintentar el cálculo de la ubicación.</p>
+</div></div>
+</li>
+<li><h3 id="properties_nociudad">noCiudad</h3>
+<div class="nociudad"><div class="opencity-controller-page opencity-controller-menuctrl-nociudad-page"><p>Indica si debe mostrarse el mensaje de ciudad no soportada.</p>
+</div></div>
+</li>
+</ul>
+</div>
+</div>

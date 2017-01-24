@@ -1,0 +1,51 @@
+<h1><code ng:non-bindable="">Settings</code>
+<div><span class="hint">service in module <code ng:non-bindable="">opencity</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="opencity-service-page opencity-service-settings-page"><p>Gestiona la configuración de la aplicación y la obtención de la ubicación.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_calcularposicion">calcularPosicion()</h3>
+<div class="calcularposicion"><div class="opencity-settings-calcularposicion-page"><p>Obtiene las coordenadas de la ubicación del usuario.</p>
+</div></div>
+</li>
+<li><h3 id="methods_getciudad">getCiudad(location)</h3>
+<div class="getciudad"><div class="opencity-settings-getciudad-page"><p>Parsea la respuesta de la llamada a la API Geocode de Google para obtener la ciudad en la 
+que se encuentra el usuario.</p>
+</div><h5 id="methods_getciudad_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>location</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="opencity-settings-getciudad-page"><p>Respuesta API Geocode</p>
+</div></td></tr></tbody></table><h5 id="methods_getciudad_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="opencity-settings-getciudad-page"><p>Ciudad usuario</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_obtenerinformacionposicion">obtenerInformacionPosicion()</h3>
+<div class="obtenerinformacionposicion"><div class="opencity-settings-obtenerinformacionposicion-page"><p>Obtiene, a partir de la posición del usuario, el detalle del tiempo y la ciudad en la que se encuentra.</p>
+</div></div>
+</li>
+<li><h3 id="methods_requestlocationfailure">requestLocationFailure()</h3>
+<div class="requestlocationfailure"><div class="opencity-settings-requestlocationfailure-page"><p>Callback que se ejecuta si el usuario no permite acceder a la ubicación del dispositivo.</p>
+</div></div>
+</li>
+<li><h3 id="methods_requestlocationok">requestLocationOK()</h3>
+<div class="requestlocationok"><div class="opencity-settings-requestlocationok-page"><p>Callback que se ejecuta una vez que el usuario permite el acceso a la ubicación del dispositivo.</p>
+</div></div>
+</li>
+<li><h3 id="methods_solicitarubicacion">solicitarUbicacion()</h3>
+<div class="solicitarubicacion"><div class="opencity-settings-solicitarubicacion-page"><p>Método que verifica si la ubicación está activada en el dispositivo. Si está activada la calcula, si no,
+solicita al usuario activar esta característica.</p>
+</div></div>
+</li>
+</ul>
+</div>
+<div class="member property"><h2 id="properties">Properties</h2>
+<ul class="properties"><li><h3 id="properties_settings">Settings</h3>
+<div class="settings"><div class="opencity-settings-settings-page"><p>Objeto que almacena la configuración realizada por el usuario y su ubicación.</p>
+</div></div>
+</li>
+<li><h3 id="properties_geocodeurl">geocodeURL</h3>
+<div class="geocodeurl"><div class="opencity-settings-geocodeurl-page"><p>URL de la API Geocode de Google.</p>
+</div></div>
+</li>
+</ul>
+</div>
+</div>
